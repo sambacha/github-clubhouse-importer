@@ -1,6 +1,6 @@
 {
   "name": "@kimmel/github-clubhouse-importer",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "Import Github Issues to Clubhouse",
   "repository": "https://github.com/kimmelsg/github-clubhouse-importer",
   "author": "Ryan Castner <castner.rr@gmail.com>",
@@ -28,6 +28,7 @@
     "@octokit/rest": "^16.24.3",
     "chalk": "^2.4.2",
     "clubhouse-lib": "^0.5.0",
+    "lodash": "^4.17.20",
     "meow": "^5.0.0",
     "ora": "^3.4.0"
   }

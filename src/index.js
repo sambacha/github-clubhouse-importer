@@ -13,6 +13,7 @@ const cli = meow(
     --github-url=<onwer/name>    Github repository owner/name, e.g. facebook/react
     --clubhouse-project=<id>     ID of Clubhouse Project to import issues into
     --state=<open|closed|all>    Github issue state to import
+    --users=<path to file>       Mapping github user login to clubhouse user email; one line per user, separated by space
 
 	Examples
     $ ghch --state=open --github-url=facebook/react --clubhouse-project=4 --github-token=xxx --clubhouse-token=xxx
@@ -35,6 +36,9 @@ const cli = meow(
         type: 'string',
         default: 'open',
       },
+      users: {
+        type: 'string',
+      }
     },
   }
 )
